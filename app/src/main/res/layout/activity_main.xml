@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.priya.coffee.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/four" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Order your coffee now!!"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:text="NAME: "
+               />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:text="QUANTITY"
+            android:layout_margin="10dp"
+             />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:padding="10sp"
+                android:text="-"
+                android:layout_margin="10dp"
+                 />
+
+            <TextView
+                android:id="@+id/showInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2 "
+                android:layout_margin="10dp"
+                 />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="10sp"
+                android:text="+"
+                android:textSize="20sp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:text="topping"
+            android:textAllCaps="true"
+            android:layout_margin="10dp"/>
+        <CheckBox
+            android:id="@+id/whipped_cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whipped Cream"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_margin="10dp"/>
+        <CheckBox
+            android:id="@+id/choclate_chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choclate chips"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:text="ORDER SUMMARY"
+            android:layout_margin="10dp"
+           />
+
+        <TextView
+            android:id="@+id/showMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:text="$20"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="order"
+            android:layout_margin="10dp"
+             />
+
+    </LinearLayout>
+</ScrollView>
